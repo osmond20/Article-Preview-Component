@@ -69,7 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: var(--mobile-layout);
+  width: 100%;
 }
 
 .parent-container {
@@ -165,6 +165,9 @@ body {
   background-color: var(--light-grayish-blue);
   padding-block-start: 0.0625rem;
   margin-block-start: 0.125rem;
+  background-image: url(images/icon-share.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .share {
@@ -207,11 +210,9 @@ body {
   background-color: var(--desaturated-dark-blue);
   padding-block-start: 0.03125rem;
   margin-block-start: 0.125rem;
-}
-
-.share-2 {
-  color: var(--light-grayish-blue);
-  width: 1.1875rem;
+  background-image: url(images/icon-share-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .share-title {
@@ -221,7 +222,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   body {
     width: 100%;
   }
@@ -250,5 +251,47 @@ body {
     height: 2.0625rem;
     width: 2.1875rem;
     padding-block-start: 0.03125rem;
+    background-image: url(images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .share-container-2 {
+    display: none;
+  }
+  .icons {
+    width: 5rem;
+  }
+  .active {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 3.125rem;
+    right: -1.25rem;
+    margin-bottom: 0.09375rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    width: 12.5rem;
+    height: 3.4375rem;
+    padding: 1.125rem;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 0.75rem;
+    z-index: 2;
+    box-shadow: 0 0.375rem 1.125rem rgba(20, 29, 50, 0.15);
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: -0.4375rem;
+    right: 5.9375rem;
+    border-left: 0.4375rem solid transparent;
+    border-right: 0.4375rem solid transparent;
+    border-top: 0.4375rem solid var(--very-dark-grayish-blue);
+  }
+  .share-title {
+    font-size: 0.6875rem;
   }
 }/*# sourceMappingURL=styles.css.map */

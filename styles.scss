@@ -70,7 +70,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: var(--mobile-layout);
+    width: 100%;
 }
 
 .parent-container{
@@ -167,6 +167,9 @@ font-weight: 700;
     background-color: var(--light-grayish-blue);
     padding-block-start: calc(1 / 16 * 1rem);
     margin-block-start: calc(2 / 16 * 1rem);
+    background-image: url(images/icon-share.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .share{
     width: calc(15 / 16 * 1rem);
@@ -208,11 +211,9 @@ font-weight: 700;
     background-color: var(--desaturated-dark-blue);
     padding-block-start: calc(0.5 / 16 * 1rem);
     margin-block-start: calc(2 / 16 * 1rem);
-}
-
-.share-2{
-    color: var(--light-grayish-blue);
-    width: calc(19 / 16 * 1rem);
+    background-image: url(images/icon-share-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .share-title{
@@ -223,7 +224,7 @@ font-weight: 700;
 }
 
 
-@media(min-width: 40rem){
+@media(min-width: 60rem){
     body{
         width: 100%;
     }
@@ -257,5 +258,51 @@ font-weight: 700;
        height: calc(33 / 16 * 1rem);
        width: calc(35 / 16 * 1rem); 
        padding-block-start: calc(0.5 / 16 * 1rem);
+       background-image: url(images/icon-share.svg);
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    .share-container-2{
+        display: none;
+    }
+
+    .icons{
+        width: calc(80 / 16 * 1rem);
+    }
+
+    .active {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: calc(50 / 16 * 1rem);
+    right: calc(-20/ 16 * 1rem);
+    margin-bottom: calc(1.5 / 16 * 1rem);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: calc(20 / 16 * 1rem);
+    width: calc(200 / 16 * 1rem);
+    height: calc(55 / 16 * 1rem);;
+    padding: calc(18 / 16 * 1rem);
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: calc(12 / 16 * 1rem);
+    z-index: 2;
+    box-shadow: 0 calc(6 / 16 * 1rem) calc(18 / 16 * 1rem) rgba(20, 29, 50, 0.15);
+    }
+
+    .active::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: calc(-7 / 16 * 1rem);
+    right: calc(95/ 16 * 1rem);
+    border-left: calc(7 / 16 * 1rem) solid transparent;
+    border-right: calc(7 / 16 * 1rem) solid transparent;
+    border-top: calc(7 / 16 * 1rem) solid var(--very-dark-grayish-blue);
+    }
+
+    .share-title{
+        font-size: calc(11 / 16 * 1rem);
     }
 }
