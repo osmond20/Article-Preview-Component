@@ -5,11 +5,12 @@ const sharePanel = document.querySelector('.active');
 function toggleSharePanel() {
   if (!sharePanel) return;
 
-  sharePanel.hidden = !sharePanel.hidden;
-
-  if (shareButton) {
-    shareButton.setAttribute('aria-expanded', sharePanel.hidden ? 'false' : 'true');
-  }
+ sharePanel.classList.toggle('show');
+ if (shareButton) {
+ const isOpen = sharePanel.classList.contains('show');
+ shareButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+ }
+  console.log('clicked');
 }
 
 if (shareButton && closeButton && sharePanel) {
