@@ -122,6 +122,7 @@ body{
 }
 
 .writer-container{
+    position: relative;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -172,5 +173,46 @@ font-weight: 700;
 }
 
 .active{
-    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: calc(20 / 16 * 1rem);
+    inset: 0;
+    height: calc(65 / 16 * 1rem);
+    width: 100%;
+    z-index: 1;
+    background-color: var(--very-dark-grayish-blue);
+     border-bottom-left-radius: calc(9 / 16 * 1rem);
+    border-bottom-right-radius:calc(9 / 16 * 1rem);
+}
+
+.icons{
+    display: flex;
+    gap: calc(20 / 16 * 1rem);
+}
+
+.share-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: calc(30 / 16 * 1rem);
+    height: calc(33 / 16 * 1rem);
+    width: calc(32.3 / 16 * 1rem);
+    border-radius: calc(500 / 16 * 1rem);
+    background-color: var(--desaturated-dark-blue);
+    padding-block-start: calc(0.5 / 16 * 1rem);
+    margin-block-start: calc(2 / 16 * 1rem);
+}
+
+.share-2{
+    color: var(--light-grayish-blue);
+    width: calc(19 / 16 * 1rem);
+}
+
+.share-title{
+    font-size: calc(13 / 16 * 1rem);
+    font-weight: 500;
+    color: var(--grayish-blue);
+    letter-spacing: 0.1em;
 }
