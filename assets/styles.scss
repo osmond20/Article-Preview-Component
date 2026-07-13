@@ -170,6 +170,7 @@ font-weight: 700;
     background-image: url(../images/icon-share.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: calc(17 / 16 * 1rem);
 }
 .share{
     width: calc(15 / 16 * 1rem);
@@ -214,6 +215,7 @@ font-weight: 700;
     background-image: url(../images/icon-share-2.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: calc(17 / 16 * 1rem);
 }
 
 .share-title{
@@ -261,12 +263,14 @@ font-weight: 700;
     }
 
     .share-container{
-       height: calc(33 / 16 * 1rem);
-       width: calc(35 / 16 * 1rem); 
+       height: calc(32 / 16 * 1rem);
+       width: calc(32.5 / 16 * 1rem); 
        padding-block-start: calc(0.5 / 16 * 1rem);
        background-image: url(../images/icon-share.svg);
        background-repeat: no-repeat;
-       background-position: center;
+       background-position: center ;
+       background-size: calc(17 / 16 * 1rem);
+       margin-inline-start: calc(70 / 16 * 1rem);
     }
 
     .share-container.share-open{
@@ -289,7 +293,7 @@ font-weight: 700;
     top: auto;
     left: auto;
     bottom: calc(60 / 16 * 1rem);
-    right: calc(-20/ 16 * 1rem);
+    right: calc(-43/ 16 * 1rem);
     margin-bottom: calc(1.5 / 16 * 1rem);
     display: none;
     justify-content: center;

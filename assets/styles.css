@@ -168,6 +168,7 @@ body {
   background-image: url(../images/icon-share.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 1.0625rem;
 }
 
 .share {
@@ -213,6 +214,7 @@ body {
   background-image: url(../images/icon-share-2.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 1.0625rem;
 }
 
 .share-title {
@@ -253,12 +255,14 @@ body {
     grid-row: 3/4;
   }
   .share-container {
-    height: 2.0625rem;
-    width: 2.1875rem;
+    height: 2rem;
+    width: 2.03125rem;
     padding-block-start: 0.03125rem;
     background-image: url(../images/icon-share.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 1.0625rem;
+    margin-inline-start: 4.375rem;
   }
   .share-container.share-open {
     background-image: url(../images/icon-share-2.svg);
@@ -277,7 +281,7 @@ body {
     top: auto;
     left: auto;
     bottom: 3.75rem;
-    right: -1.25rem;
+    right: -2.6875rem;
     margin-bottom: 0.09375rem;
     display: none;
     justify-content: center;
