@@ -3,34 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preload" 
+  href="fonts/manrope-v20-latin-500.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <link rel="preload" 
+  href="fonts/manrope-v20-latin-700.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="parent-container">
+    <img class="image" src="images/drawers.jpg" alt="Image of drawers" height="20" width="20">
+    <div class="content-container">
+      <h1 class="heading">Shift the overall look and feel by adding these wonderful touches to funiture in your home</h1>
+      <p class="paragraph">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.  
+      </p>
+    </div>
+    <div class="writer-container">
+      <img class="profile-pic" src="images/avatar-michelle.jpg" alt="Profile picture of Michelle" height="20" width="20">
+      <section class="publisher-name-and-date">
+        <p class="publisher-name">Michelle Appleton</p>
+        <p class="article-publish-date">28 Jun 2020</p>
+      </section>
+      <div class="share-container"> 
+        <img class="share" src="images/icon-share.svg" alt="" height="20" width="20">
+      </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+      <div class="active">
+        <p>S H A R E</p>
+        <ul>
+          <li><a href="https://www.facebook.com"><img src="images/icon-facebook.svg" alt="" height="20" width="20"></a></li>
+          <li><a href="https://x.com/?lang=en-za"><img src="images/icon-twitter.svg" alt="" height="20" width="20"></a></li>
+          <li><a href="https://www.pinterest.com"><img src="images/icon-pinterest.svg" alt="" height="20" width="20"></a></li>
+        </ul>
+        <div class="share-container"> 
+          <img class="share" src="images/icon-share.svg" alt="" height="20" width="20">
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

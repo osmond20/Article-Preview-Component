@@ -1,0 +1,176 @@
+/* manrope-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/manrope-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/manrope-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue:hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue:hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --font-family: 'Manrope', sans-serif;
+    --font-size: calc(13 / 16 * 1rem);
+    --mobile-layout: calc(375 / 16 * 1rem);
+    --desktop-layout: calc(1440 / 16 * 1rem)
+}
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: var(--mobile-layout);
+}
+
+.parent-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: calc(328 / 16 * 1rem);
+    height: calc(512 / 16 * 1rem);
+    background-color: var(--white);
+    border-top-left-radius: calc(9 / 16 * 1rem);
+    border-top-right-radius: calc(9 / 16 * 1rem);
+    border-bottom-left-radius: calc(9 / 16 * 1rem);
+    border-bottom-right-radius:calc(9 / 16 * 1rem);
+    font-family: var(--font-family);
+}
+
+
+.image{
+    height: calc(200 / 16 * 1rem);
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(13 / 16 * 1rem);
+    padding-block-start: calc(37 / 16 * 1rem);
+    padding-inline: calc(30 / 16 * 1rem);
+    width: 100%;
+    font-size: var(--font-size);
+    margin-block-end: calc(30 / 16 * 1rem);
+}
+
+.heading{
+    font-size: calc(16 / 16 * 1rem);
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.48em;
+}
+
+.paragraph{
+    line-height: 1.51em;
+    padding-inline: calc(3 / 16 * 1rem);
+    padding-inline-end: calc(7 / 16 * 1rem);
+    color: var(--desaturated-dark-blue);
+}
+
+.writer-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding-inline: calc(32 / 16 * 1rem);
+    font-size: var(--font-size);
+    gap: calc(14 / 16 * 1rem);
+}
+
+.profile-pic{
+    width: calc(41.5 / 16 * 1rem);
+    border-radius: calc(200 / 16 * 1rem);
+}
+
+.publisher-name-and-date{
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    width: calc(200 / 16 * 1rem);
+}
+
+.publisher-name{
+padding-block-start: calc(4 / 16 * 1rem);
+color: var(--very-dark-grayish-blue);
+font-weight: 700;
+}
+
+.article-publish-date{
+    padding-block-start: calc(2 / 16 * 1rem);
+    font-weight: 500;
+    color: var(--grayish-blue)
+}
+
+.share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: calc(45 / 16 * 1rem);
+    height: calc(33 / 16 * 1rem);
+    width: calc(55 / 16 * 1rem);
+    border-radius: calc(500 / 16 * 1rem);
+    background-color: var(--light-grayish-blue);
+    padding-block-start: calc(1 / 16 * 1rem);
+    margin-block-start: calc(2 / 16 * 1rem);
+}
+.share{
+    width: calc(15 / 16 * 1rem);
+}
+
+.active{
+    display: none;
+}
