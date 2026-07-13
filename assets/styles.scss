@@ -4,7 +4,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
-  src: url('fonts/manrope-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/manrope-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* manrope-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  src: url('fonts/manrope-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/manrope-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root{
@@ -167,7 +167,7 @@ font-weight: 700;
     background-color: var(--light-grayish-blue);
     padding-block-start: calc(1 / 16 * 1rem);
     margin-block-start: calc(2 / 16 * 1rem);
-    background-image: url(images/icon-share.svg);
+    background-image: url(../images/icon-share.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -211,7 +211,7 @@ font-weight: 700;
     background-color: var(--desaturated-dark-blue);
     padding-block-start: calc(0.5 / 16 * 1rem);
     margin-block-start: calc(2 / 16 * 1rem);
-    background-image: url(images/icon-share-2.svg);
+    background-image: url(../images/icon-share-2.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -264,13 +264,13 @@ font-weight: 700;
        height: calc(33 / 16 * 1rem);
        width: calc(35 / 16 * 1rem); 
        padding-block-start: calc(0.5 / 16 * 1rem);
-       background-image: url(images/icon-share.svg);
+       background-image: url(../images/icon-share.svg);
        background-repeat: no-repeat;
        background-position: center;
     }
 
     .share-container.share-open{
-        background-image: url(images/icon-share-2.svg);
+        background-image: url(../images/icon-share-2.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-color:var(--desaturated-dark-blue);

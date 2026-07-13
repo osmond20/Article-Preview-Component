@@ -4,7 +4,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/manrope-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/manrope-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* manrope-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
@@ -165,7 +165,7 @@ body {
   background-color: var(--light-grayish-blue);
   padding-block-start: 0.0625rem;
   margin-block-start: 0.125rem;
-  background-image: url(images/icon-share.svg);
+  background-image: url(../images/icon-share.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -210,7 +210,7 @@ body {
   background-color: var(--desaturated-dark-blue);
   padding-block-start: 0.03125rem;
   margin-block-start: 0.125rem;
-  background-image: url(images/icon-share-2.svg);
+  background-image: url(../images/icon-share-2.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -256,12 +256,12 @@ body {
     height: 2.0625rem;
     width: 2.1875rem;
     padding-block-start: 0.03125rem;
-    background-image: url(images/icon-share.svg);
+    background-image: url(../images/icon-share.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
   .share-container.share-open {
-    background-image: url(images/icon-share-2.svg);
+    background-image: url(../images/icon-share-2.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--desaturated-dark-blue);
