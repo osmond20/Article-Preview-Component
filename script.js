@@ -3,14 +3,11 @@ const closeButton = document.querySelector('.share-container-2');
 const sharePanel = document.querySelector('.active');
 
 function toggleSharePanel() {
-  if (!sharePanel) return;
+  if (!sharePanel || !shareButton) return;
 
- sharePanel.classList.toggle('show');
- if (shareButton) {
- const isOpen = sharePanel.classList.contains('show');
- shareButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
- }
-  console.log('clicked');
+  const isOpen = sharePanel.classList.toggle('show');
+  shareButton.classList.toggle('share-open', isOpen);
+  shareButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
 if (shareButton && closeButton && sharePanel) {
