@@ -201,6 +201,15 @@ font-weight: 700;
     gap: calc(20 / 16 * 1rem);
 }
 
+.icon{
+    scale:1;
+    transition: scale 0.3s ease;
+}
+
+.icon:hover{
+    scale:1.2;
+}
+
 .share-container-2{
     display: flex;
     justify-content: center;
@@ -286,7 +295,7 @@ font-weight: 700;
     }
 
     .icons{
-        width: calc(80 / 16 * 1rem);
+        width: calc(85 / 16 * 1rem);
     }
 
     .active {
@@ -306,7 +315,7 @@ font-weight: 700;
     background-color: var(--very-dark-grayish-blue);
     border-radius: calc(12 / 16 * 1rem);
     z-index: 2;
-    box-shadow: 0 calc(6 / 16 * 1rem) calc(18 / 16 * 1rem) rgba(20, 29, 50, 0.15);
+    box-shadow: 0 calc(6 / 16 * 1rem) calc(18 / 16 * 1rem) var(--desaturated-dark-blue);
     }
 
     .active::after {
