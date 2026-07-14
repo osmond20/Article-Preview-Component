@@ -4,7 +4,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/manrope-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/manrope-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* manrope-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
@@ -165,7 +165,7 @@ body {
   background-color: var(--light-grayish-blue);
   padding-block-start: 0.0625rem;
   margin-block-start: 0.125rem;
-  background-image: url(../images/icon-share.svg);
+  background-image: url(images/icon-share.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.0625rem;
@@ -211,7 +211,7 @@ body {
   background-color: var(--desaturated-dark-blue);
   padding-block-start: 0.03125rem;
   margin-block-start: 0.125rem;
-  background-image: url(../images/icon-share-2.svg);
+  background-image: url(images/icon-share-2.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.0625rem;
@@ -258,14 +258,15 @@ body {
     height: 2rem;
     width: 2.03125rem;
     padding-block-start: 0.03125rem;
-    background-image: url(../images/icon-share.svg);
+    background-image: url(images/icon-share.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.0625rem;
     margin-inline-start: 4.375rem;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
   }
   .share-container.share-open {
-    background-image: url(../images/icon-share-2.svg);
+    background-image: url(images/icon-share-2.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--desaturated-dark-blue);

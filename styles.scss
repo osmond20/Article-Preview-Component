@@ -189,7 +189,6 @@ font-weight: 700;
     background-color: var(--very-dark-grayish-blue);
     border-bottom-left-radius: calc(9 / 16 * 1rem);
     border-bottom-right-radius:calc(9 / 16 * 1rem);
-    transition: display 0.1s ease;
 }
 
 .active.show{
@@ -272,6 +271,7 @@ font-weight: 700;
        background-position: center ;
        background-size: calc(17 / 16 * 1rem);
        margin-inline-start: calc(70 / 16 * 1rem);
+       transition: background-color 0.3s ease, background-image 0.3s ease;
     }
 
     .share-container.share-open{
