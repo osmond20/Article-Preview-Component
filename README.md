@@ -27,7 +27,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor Solution](https://your-solution-url.com)
+- Solution URL: [FrontEnd Mentor Solution](https://www.frontendmentor.io/solutions/article-preview-component-SybymsmQZL)
 - Live Site URL: [Article Preview Component Deployed Solution](https://osmond20.github.io/Article-Preview-Component/)
 
 ## My process
@@ -75,4 +75,4 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 ## Author
 
 - Website - [GitHub](https://www.github.com/osmond20)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/osmond20)
+- Frontend Mentor - [@osmond20](https://www.frontendmentor.io/profile/osmond20)
