@@ -126,6 +126,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    height: 100%;
     width: 100%;
     padding-inline: calc(32 / 16 * 1rem);
     font-size: var(--font-size);
@@ -133,8 +134,9 @@ body{
 }
 
 .profile-pic{
-    width: calc(41.5 / 16 * 1rem);
+    width: calc(41 / 16 * 1rem);
     border-radius: calc(200 / 16 * 1rem);
+    margin-block-end: calc(15 / 16 * 1rem);
 }
 
 .publisher-name-and-date{
@@ -156,7 +158,7 @@ font-weight: 700;
     color: var(--grayish-blue)
 }
 
-.share-container{
+.share-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +169,7 @@ font-weight: 700;
     background-color: var(--light-grayish-blue);
     padding-block-start: calc(1 / 16 * 1rem);
     margin-block-start: calc(2 / 16 * 1rem);
+    margin-block-end: calc(15 / 16 * 1rem);
     background-image: url(images/icon-share.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +186,7 @@ font-weight: 700;
     align-items:center;
     gap: calc(20 / 16 * 1rem);
     inset: 0;
-    height: calc(65 / 16 * 1rem);
+    height: 100%;
     width: 100%;
     z-index: 1;
     background-color: var(--very-dark-grayish-blue);
@@ -204,15 +207,15 @@ font-weight: 700;
 }
 
 .icon{
-    scale:1;
-    transition: scale 0.3s ease;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
 }
 
 .icon:hover{
-    scale:1.2;
+    transform: translateY(calc(-2 / 16 * 1rem));
 }
 
-.share-container-2{
+.share-button-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +276,7 @@ font-weight: 700;
         grid-row: 3/4;
     }
 
-    .share-container{
+    .share-button{
        height: calc(32 / 16 * 1rem);
        width: calc(32.5 / 16 * 1rem); 
        padding-block-start: calc(0.5 / 16 * 1rem);
@@ -285,14 +288,14 @@ font-weight: 700;
        transition: background-color 0.3s ease, background-image 0.3s ease;
     }
 
-    .share-container.share-open{
+    .share-button.share-open{
         background-image: url(images/icon-share-2.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-color:var(--desaturated-dark-blue);
     }
 
-    .share-container-2{
+    .share-button-2{
         display: none;
     }
 

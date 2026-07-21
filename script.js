@@ -1,5 +1,5 @@
-const shareButton = document.querySelector('.share-container');
-const closeButton = document.querySelector('.share-container-2');
+const shareButton = document.querySelector('.share-button');
+const closeButton = document.querySelector('.share-button-2');
 const sharePanel = document.querySelector('.active');
 
 function toggleSharePanel() {

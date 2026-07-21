@@ -124,6 +124,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  height: 100%;
   width: 100%;
   padding-inline: 2rem;
   font-size: var(--font-size);
@@ -131,8 +132,9 @@ body {
 }
 
 .profile-pic {
-  width: 2.59375rem;
+  width: 2.5625rem;
   border-radius: 12.5rem;
+  margin-block-end: 0.9375rem;
 }
 
 .publisher-name-and-date {
@@ -154,7 +156,7 @@ body {
   color: var(--grayish-blue);
 }
 
-.share-container {
+.share-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +167,7 @@ body {
   background-color: var(--light-grayish-blue);
   padding-block-start: 0.0625rem;
   margin-block-start: 0.125rem;
+  margin-block-end: 0.9375rem;
   background-image: url(images/icon-share.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +185,7 @@ body {
   align-items: center;
   gap: 1.25rem;
   inset: 0;
-  height: 4.0625rem;
+  height: 100%;
   width: 100%;
   z-index: 1;
   background-color: var(--very-dark-grayish-blue);
@@ -193,7 +196,7 @@ body {
 }
 
 .active.show {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .icons {
@@ -203,15 +206,15 @@ body {
 }
 
 .icon {
-  scale: 1;
-  transition: scale 0.3s ease;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
 .icon:hover {
-  scale: 1.2;
+  transform: translateY(-0.125rem);
 }
 
-.share-container-2 {
+.share-button-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,7 +268,7 @@ body {
   .writer-container {
     grid-row: 3/4;
   }
-  .share-container {
+  .share-button {
     height: 2rem;
     width: 2.03125rem;
     padding-block-start: 0.03125rem;
@@ -276,13 +279,13 @@ body {
     margin-inline-start: 4.375rem;
     transition: background-color 0.3s ease, background-image 0.3s ease;
   }
-  .share-container.share-open {
+  .share-button.share-open {
     background-image: url(images/icon-share-2.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--desaturated-dark-blue);
   }
-  .share-container-2 {
+  .share-button-2 {
     display: none;
   }
   .icons {
